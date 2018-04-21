@@ -24,24 +24,30 @@ nav{
     float: right;
 }
 
+nav a{
+    text-decoration: none;
+    color: white;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
 nav a:hover{
     background-color: white;
     color: rgb(184, 28, 28);
-    
 }
 
 li{
     display: inline-block;
     right: 20px;
     margin: 5px;
-    padding-right: 5px;
-    padding-left: 5px;
     
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     font-weight: bold;
     font-size: 50px;
     background-color: rgb(184, 28, 28);
+
+    text-decoration: none;
 }
 
 
