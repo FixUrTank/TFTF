@@ -21,7 +21,15 @@
                
                <li><a href="Tours">Tours</a></li>
                <li><a href="Contact">Contact</a></li>
-               <li><a href="Account">Account</a></li>
+               
+               <li class="dropdown">
+                   <a href="javascript:void(0)" class="dropbutton">Account</a>
+                   <div class="dropdown-list">
+                       <a href="">Sign Up</a>
+                       <a href="">Log In</a>
+                       <a href="">Log Out</a>
+                   </div>
+                </li>
            </ul>
        </nav>
 
