@@ -1,3 +1,33 @@
-li:hover{
+li a, .dropbutton{
+    display: inline-block;
+}
+
+li a:hover, .dropdown:hover .dropbutton{
     color: rgb(184, 28, 28);
 }
+
+li.dropdown{
+    display: inline-block;
+}
+
+.dropdown-list{
+    display: none;
+    position: absolute;
+    width: fit-content;
+    z-index: 1;
+}
+
+.dropdown-list a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-list a:hover{
+    color: rgb(184, 28, 28);    
+}
+
+.dropdown:hover .dropdown-list{
+    display: block;
+}
+
