@@ -10,8 +10,6 @@
             <a href="homepage.html">TFTF</a>
         </header>
         
-        
-
         <nav>
            <ul>
                <li class="dropdown">
@@ -35,12 +33,11 @@
                 </li>
            </ul>
        </nav>
-
+       
        <footer>
-           <a href="cart.php"><img src="shopping-cart.jpg"></a>
+            <p>Supreme x Colgate</p>
+            <a href="cart.php"><img src="shopping-cart.jpg"></a>
        </footer>
 
-      
-    
     </body>
 </html>  
