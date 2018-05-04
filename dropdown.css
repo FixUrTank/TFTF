@@ -1,0 +1,36 @@
+li a, .dropbutton{
+    display: inline-block;
+}
+
+li a:hover, .dropdown:hover .dropbutton{
+    color: rgb(184, 28, 28);
+    background-color: white;
+}
+
+li.dropdown{
+    display: inline-block;
+}
+
+.dropdown-list{
+    display: none;
+    position: absolute;
+    width: fit-content;
+    z-index: 1;
+}
+
+.dropdown-list a{
+    color: rgb(184, 28, 28);
+    text-decoration: none;
+    font-size: 35;
+    display: block;
+}
+
+.dropdown-list a:hover{
+    color: white;
+    background-color: rgb(184, 28, 28);    
+}
+
+.dropdown:hover .dropdown-list{
+    display: block;
+}
+
