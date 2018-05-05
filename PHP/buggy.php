@@ -1,3 +1,4 @@
+<php>
 <html>
     <head>
         <title>TFTF</title>
@@ -48,7 +49,7 @@
                 This is our standard issue buggy perfect for your off-roading experience.
                 Overcomes any obstacle on all rough terrain with ease. 
                 Easy to handle and steer. Automatic transmission. Reaches speeds of 60 km/h. Capacity for 2 people, possibility for carrying baggage<br>
-                Great for on-road as well.
+                Great for on-road as well. ffs
                 </p> 
                 <a href="cart.html">Add to Cart</a>
                 
@@ -71,4 +72,5 @@
             </div>           
     
     </body>
-</html>    
+</html> 
+</php>   
