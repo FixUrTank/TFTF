@@ -1,5 +1,5 @@
 <php>
-<html>
+
     <head>
         <title>TFTF</title>
         <link rel="stylesheet" type="text/css" href="layout.css">
@@ -72,5 +72,5 @@
             </div>           
     
     </body>
-</html> 
+
 </php>   
