@@ -73,7 +73,6 @@ footer{
 footer p{
     display: inline-block;
     margin: 0;
-    padding: 5px;
     font-size: 35px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
@@ -83,6 +82,13 @@ footer p{
 
 footer a{
     float: right;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color: rgb(184, 28, 28);
+    background-color: white;
 }
 
 

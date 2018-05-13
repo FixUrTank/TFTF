@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>TFTF</title>
+        <link rel="stylesheet" type="text/css" href="CSS\layout.css">
+        <link rel="stylesheet" type="text/css" href="CSS\dropdown.css">
+        <link rel="stylesheet" type="text/css" href="CSS\form.css">
+    </head>
+
+    <body>
+        <header>
+            <a href="homepage.html">TFTF</a>
+        </header>
+        
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbutton">Rentals</a>
+                    <div class="dropdown-list">
+                        <a href="buggy.html">Buggies</a>
+                        <a href="atv.html">ATV's</a>
+                    </div>
+                </li>
+                
+                <li><a href="tour.html">Tours</a></li>
+                
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbutton">Account</a>
+                    <div class="dropdown-list">
+                        <a href="signup.html">Sign Up</a>
+                        <a href="login.html">Log In</a>
+                        <a href="logout.html">Log Out</a>
+                    </div>
+                 </li>
+            </ul>
+        </nav>
+        
+        <form action="homepage.html" method="post">
+            <input type="text" name="uname" placeholder="Username"><br>
+            <input type="text" name="fname" placeholder="First Name"><br>
+            <input type="text" name="lname" placeholder="Last Name"><br>
+            <input type="text" name="email" placeholder="E-Mail"><br>
+            <input type="password" name="password" placeholder="Password"><br>
+            Must be 18+ and posess a valid Driver's License<br>
+            <input type="date" name="bday"><br>
+
+            <input type="submit">
+        </form>            
+
+       <footer>
+            <p><a href="contact.html">Contact Us!</a></p>
+            <a href="cart.html"><img src="shopping-cart.jpg"></a>
+       </footer>
+       
+    </body>
+</html>  
