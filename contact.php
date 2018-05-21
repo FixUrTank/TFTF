@@ -9,7 +9,7 @@
     <body>
 
             <header>
-                    <a href="homepage.html">TFTF</a>
+                    <a href="homepage.php">TFTF</a>
             </header>
                     
                     <nav>
@@ -17,27 +17,27 @@
                            <li class="dropdown">
                                <a href="javascript:void(0)" class="dropbutton">Rentals</a>
                                <div class="dropdown-list">
-                                   <a href="buggy.html">Buggies</a>
-                                   <a href="atv.html">ATV's</a>
+                                   <a href="buggy.php">Buggies</a>
+                                   <a href="atv.php">ATV's</a>
                                </div>
                            </li>
                            
-                           <li><a href="tour.html">Tours</a></li>
+                           <li><a href="tour.php">Tours</a></li>
                            
                            <li class="dropdown">
                                <a href="javascript:void(0)" class="dropbutton">Account</a>
                                <div class="dropdown-list">
-                                   <a href="signup.html">Sign Up</a>
-                                   <a href="login.html">Log In</a>
-                                   <a href="logout.html">Log Out</a>
+                                   <a href="signup.php">Sign Up</a>
+                                   <a href="login.php">Log In</a>
+                                   <a href="logout.php">Log Out</a>
                                </div>
                             </li>
                        </ul>
                    </nav>
                    
                    <footer>
-                        <p><a href="contact.html">Contact Us!</a></p>
-                        <a href="cart.html"><img src="shopping-cart.jpg"></a>
+                        <p><a href="contact.php">Contact Us!</a></p>
+                        <a href="cart.php"><img src="shopping-cart.jpg"></a>
                    </footer>
     </body>
     
