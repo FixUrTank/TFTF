@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+    
 <html>
     <head>
         <title>TFTF</title>
@@ -32,6 +36,13 @@
                  </li>
             </ul>
         </nav>
+
+        <?php
+            if(isset($_SESSION['USER'])) {
+                echo "welcome johndoe!";
+                exit();
+            }        
+        ?>
         
        <footer>
             <p><a href="contact.php">Contact Us!</a></p>

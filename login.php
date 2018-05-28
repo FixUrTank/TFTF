@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <html>
     <head>
         <title>TFTF</title>
@@ -32,6 +36,12 @@
                  </li>
             </ul>
         </nav>
+
+        <form action="Include/loginhandler.php" method="POST">
+            <input type="text" name="uid" placeholder="Username"><br>
+            <input type="password" name="pwd" placeholder="Password"><br>
+            <button type="submit" name="submit">Sign Up</button>
+        </form>            
 
         
        <footer>
