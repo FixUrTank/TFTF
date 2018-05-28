@@ -25,7 +25,7 @@
             
             //checks if row exists with corresponding username and password
             if($row = mysqli_fetch_assoc($result)){
-                $_SESSION['USER'] = $user_uid;
+                $_SESSION['USER'] = $uid;
                 header("Location: ../homepage.php?login=succes");
                 //user logs in and is sent to the homepage
             } else {

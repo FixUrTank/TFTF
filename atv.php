@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <html>
     <head>
         <title>TFTF</title>
@@ -29,7 +33,7 @@
                                <div class="dropdown-list">
                                    <a href="signup.php">Sign Up</a>
                                    <a href="login.php">Log In</a>
-                                   <a href="logout.php">Log Out</a>
+                                   <a href="Include\logout.php">Log Out</a>
                                </div>
                             </li>
                        </ul>
@@ -37,13 +41,13 @@
                    
                    <footer>
                         <p><a href="contact.php">Contact Us!</a></p>
-                        <a href="cart.php"><img src="shopping-cart.jpg"></a>
+                        <a href="cart.php"><img src="JPEG\shopping-cart.jpg"></a>
                    </footer>
             
     
             <div class="article">
                 <p>
-                <img src="redatv.jpg"/>
+                <img src="JPEG\redatv.jpg"/>
                 "Nagasaki Blazer"<br>
                 This is our standard issue buggy perfect for your off-roading experience.
                 Overcomes any obstacle on all rough terrain with ease. 
@@ -56,7 +60,7 @@
             
             <div class="article">
                 <p>
-                <img src="camoatv.jpg"/>
+                <img src="JPEG\camoatv.jpg"/>
                 "Nagasaki Rogue"<br>
                 For those who want the extra power and speed this is for you. Comes with 20000hp, no joke...seriously the orange paint does a lot.
                 </p>
@@ -65,7 +69,7 @@
 
             <div class="article">
                 <p>
-                <img src="sanchez.jpg"/>
+                <img src="JEPG\sanchez.jpg"/>
                 "The Sanchez"<br>
                 Limited Time Offer!
                 A perfect buggy for group touring or just for your family.

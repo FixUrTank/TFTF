@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 
 <html>
     <head>
@@ -30,7 +33,7 @@
                         <div class="dropdown-list">
                             <a href="signup.php">Sign Up</a>
                             <a href="login.php">Log In</a>
-                            <a href="logout.php">Log Out</a>
+                            <a href="Include\logout.php">Log Out</a>
                         </div>
                      </li>
                 </ul>
@@ -38,25 +41,25 @@
             
            <footer>
                 <p><a href="contact.php">Contact Us!</a></p>
-                <a href="cart.php"><img src="shopping-cart.jpg"></a>
+                <a href="cart.php"><img src="JPEG\shopping-cart.jpg"></a>
            </footer>
             
     
             <div class="article">
                 <p>
-                <img src="blackbuggy.jpg"/>
+                <img src="JPEG\blackbuggy.jpg"/>
                 This is our standard issue buggy perfect for your off-roading experience.
                 Overcomes any obstacle on all rough terrain with ease. 
                 Easy to handle and steer. Automatic transmission. Reaches speeds of 60 km/h. Capacity for 2 people, possibility for carrying baggage<br>
                 Great for on-road as well. ffs
                 </p> 
-                <a href="cart.php">Add to Cart</a>
+                <button class="addcart" action="Include\itemhandler.php" name="buggy1" method="GET">Add to Cart</button>
                 
             </div>
             
             <div class="article">
                 <p>
-                <img src="orangebuggy.jpg"/>
+                <img src="JPEG\orangebuggy.jpg"/>
                 For those who want the extra power and speed this is for you. Comes with 20000hp, no joke...seriously the orange paint does a lot.
                 </p>
                 <a href="cart.php">Add to Cart</a>
@@ -64,7 +67,7 @@
 
             <div class="article">
                 <p>
-                <img src="4seatbuggy.jpg"/>
+                <img src="JPEG\4seatbuggy.jpg"/>
                 A perfect buggy for group touring or just for your family.
                 </p>
                 <a href="cart.php">Add to Cart</a>

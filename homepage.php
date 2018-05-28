@@ -31,7 +31,7 @@
                     <div class="dropdown-list">
                         <a href="signup.php">Sign Up</a>
                         <a href="login.php">Log In</a>
-                        <a href="logout.php">Log Out</a>
+                        <a href="Include\logout.php">Log Out</a>
                     </div>
                  </li>
             </ul>
@@ -39,14 +39,15 @@
 
         <?php
             if(isset($_SESSION['USER'])) {
-                echo "welcome johndoe!";
-                exit();
+
+                echo "Welcome ";
+                echo $_SESSION['USER'];
             }        
         ?>
         
        <footer>
             <p><a href="contact.php">Contact Us!</a></p>
-            <a href="cart.php"><img src="shopping-cart.jpg"></a>
+            <a href="cart.php"><img src="JPEG\shopping-cart.jpg"></a>
        </footer>
        
     </body>
