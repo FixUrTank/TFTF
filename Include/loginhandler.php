@@ -10,7 +10,7 @@
         $pwd = $_POST['pwd'];
 
         //error handler
-        //checks if either login fields are empty 
+        //checks if either login fields are empty
         if(empty($uid) || empty($pwd)){
             header("Location: ../login.php?login=empty");
             exit();
@@ -26,6 +26,7 @@
             //checks if row exists with corresponding username and password
             if($row = mysqli_fetch_assoc($result)){
                 $_SESSION['USER'] = $uid;
+                $_SESSION['EMPTY'] = "Your Cart Is Empty";
                 header("Location: ../homepage.php?login=succes");
                 //user logs in and is sent to the homepage
             } else {
@@ -33,7 +34,7 @@
                 exit();
             }
         } 
-    }
+    }       
                 
 
 ?>

@@ -1,5 +1,10 @@
 <?php
     session_start();
+
+    if(isset($_SESSION['USER'])){
+        header("Location: ../homepage.php?Logged_In_Already");
+        exit();
+    }
 ?>
 
 <html>

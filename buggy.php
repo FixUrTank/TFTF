@@ -53,8 +53,7 @@
                 Easy to handle and steer. Automatic transmission. Reaches speeds of 60 km/h. Capacity for 2 people, possibility for carrying baggage<br>
                 Great for on-road as well. ffs
                 </p> 
-                <button class="addcart" action="Include\itemhandler.php" name="buggy1" method="GET">Add to Cart</button>
-                
+                <form action="Include\buggyhandler.php" method="GET"><button class="addcart" type="submit" name="buggy1">Add to Cart</button></form> 
             </div>
             
             <div class="article">
@@ -62,7 +61,7 @@
                 <img src="JPEG\orangebuggy.jpg"/>
                 For those who want the extra power and speed this is for you. Comes with 20000hp, no joke...seriously the orange paint does a lot.
                 </p>
-                <a href="cart.php">Add to Cart</a>
+                <form action="Include\buggyhandler.php" method="GET"><button class="addcart" type="submit" name="buggy2">Add to Cart</button></form>
             </div>
 
             <div class="article">
@@ -70,7 +69,7 @@
                 <img src="JPEG\4seatbuggy.jpg"/>
                 A perfect buggy for group touring or just for your family.
                 </p>
-                <a href="cart.php">Add to Cart</a>
+                <form action="Include\buggyhandler.php" method="GET"><button class="addcart" type="submit" name="buggy3">Add to Cart</button></form>
             </div>           
     
     </body>
