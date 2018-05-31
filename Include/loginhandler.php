@@ -16,20 +16,27 @@
             exit();
         } else {
             //queries the username
-            $sql = "SELECT * FROM users WHERE user_uid = '$uid'";
+            $sql = "SELECT * FROM users WHERE user_uid = '$uid' AND user_pwd = '$pwd'";
             $result = mysqli_query($conn, $sql);
 
-            //queries the password
-            $sql = "SELECT * FROM users WHERE user_pwd = '$pwd'";
-            $result = mysqli_query($conn, $sql);
-            
             //checks if row exists with corresponding username and password
             if($row = mysqli_fetch_assoc($result)){
                 $_SESSION['USER'] = $uid;
                 $_SESSION['EMPTY'] = "Your Cart Is Empty";
                 header("Location: ../homepage.php?login=succes");
                 //user logs in and is sent to the homepage
-            } else {
+            }
+                
+            //checks if admin account logging in
+            $sql = "SELECT * FROM users WHERE user_uid = "ADMIN" AND user_pwd = '$pwd'";
+            $result = mysqli_query($conn, $sql);
+
+            if($row = mysqli_fetch_assoc($result)){
+                $_SESSION['ADMIN'] = "ADMIN";
+                header("Location: ../homepage.php?welcome_admin");
+            }
+            
+            else {
                 header("Location: ../login.php?login=error");
                 exit();
             }
