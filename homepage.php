@@ -16,7 +16,7 @@
         
         <nav>
             <ul>
-                <?php if(isset($_SESSION['ADMIN'])) {<li><a href="admin.php">Admin</a><li>} ?>
+            <li><a href="admin.php"><?php if(isset($_SESSION['ADMIN'])){echo "Admin";}?></a><li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbutton">Rentals</a>
                     <div class="dropdown-list">
@@ -39,12 +39,8 @@
         </nav>
 
         <?php
-            if(isset($_SESSION['ADMIN'])){
-
-            }
 
             if(isset($_SESSION['USER'])) {
-
                 echo "Welcome " . $_SESSION['USER'];
             }        
         ?>

@@ -40,7 +40,7 @@
         <?php
             if(isset($_SESSION['buggy1']) || isset($_SESSION['buggy2']) || isset($_SESSION['buggy3']) || 
             isset($_SESSION['atv1']) || isset($_SESSION['atv2']) || isset($_SESSION['atv3']) || 
-            isset($_SESSION['tour1']) || isset($_SESSION['tour2'])) {
+            isset($_SESSION['tour']){
 
                 unset($_SESSION['EMPTY']);  
             
@@ -52,7 +52,16 @@
                 }
                 if(isset($_SESSION['buggy3'])){
                     echo $_SESSION['buggy3'];
-                }  
+                }
+                if(isset($_SESSION['atv1'])){
+                    echo $_SESSION['atv1'];
+                }
+                if(isset($_SESSION['atv2'])){
+                    echo $_SESSION['atv2'];
+                }
+                if(isset($_SESSION['atv3'])){
+                    echo $_SESSION['atv3'];
+                }    
             } else {
                 echo $_SESSION['EMPTY'];
             }              
