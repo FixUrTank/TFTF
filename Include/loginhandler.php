@@ -33,7 +33,7 @@
 
             if($row = mysqli_fetch_assoc($result)){
                 $_SESSION['ADMIN'] = "ADMIN";
-                header("Location: ../homepage.php?welcome_admin");
+                header("Location: ../admin.php?welcome_admin");
             }
             
             else {

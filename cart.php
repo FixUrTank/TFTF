@@ -67,9 +67,10 @@
             }              
         ?>
         
+
+
        <footer>
             <p><a href="contact.php">Contact Us!</a></p>
-            <a href="cart.php"><img src="JPEG\shopping-cart.jpg"></a>
        </footer>
        
     </body>

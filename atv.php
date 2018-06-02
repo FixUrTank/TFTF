@@ -12,13 +12,13 @@
     
     <body>
 
-            <header>
-                    <a href="homepage.php">TFTF</a>
-            </header>
+        <header>
+            <a href="homepage.php">TFTF</a>
+        </header>
                     
-                    <nav>
-                       <ul>
-                           <li class="dropdown">
+            <nav>
+                <ul>
+                       <li class="dropdown">
                                <a href="javascript:void(0)" class="dropbutton">Rentals</a>
                                <div class="dropdown-list">
                                    <a href="buggy.php">Buggies</a>
