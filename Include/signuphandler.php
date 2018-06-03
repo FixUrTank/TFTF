@@ -17,25 +17,20 @@ if(isset($_POST['submit'])){
         exit();
     }
     
-    $sql = "SELECT * FROM users WHERE user_uid = '$uid';";
+    $sql = "SELECT * FROM users WHERE user_uid = '$uid'";
     $result = mysqli_query($conn, $sql);
+    
     if($row = mysqli_fetch_assoc($result)){
         header("Location: ../signup.php?error=username_taken");
         exit();
     }
     
-    $sql = "SELECT * FROM users WHERE user_uid = 'ADMIN';";
-    $result = mysqli_query($conn, $sql);
-    if($row = mysqli_fetch_assoc($result)){
-        header("Location ../signup.php?VINCENT_IS_OUR_LORD_AND_ADMIN");
-        exit();
-    }
     else { 
     //inserts given values into database and runs query
     $sql = "INSERT INTO users(user_uid, user_first, user_last, user_email, user_pwd) VALUES ('$uid', '$first', '$last', '$email', '$pwd')";
-    $result = mysqli_query ($conn, $sql);
+    $result = mysqli_query($conn, $sql);
     
-    header("Location: ../login.php");
+    header("Location: ../login.php?signup=succesful!");
     }
 }
 ?>

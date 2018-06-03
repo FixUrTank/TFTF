@@ -5,6 +5,7 @@
         header("Location: ../homepage.php?thou_doest_not_have_permission_ye_peasant");
         exit();
     }
+    include_once 'Include/dbh.php';
 ?>
     
 <html>
@@ -29,23 +30,17 @@
         </nav>
         
         <?php
-            include 'Include/dbh.php';
-
-            $sql = "SELECT * FROM users";
+            
+            $sql = "SELECT * FROM vehicles WHERE IsVehicleInStorage = 0";
             $result = mysqli_query($conn, $sql);
             
-            echo "-ALL REGISTERED USERS-<br><br>";
+            echo "RENTED OUT <br><br>";
             if(mysqli_num_rows($result)){
                 while($row = mysqli_fetch_assoc($result)){
-                    echo $row['user_uid'] . " AS " . $row['user_first'] . " " . $row['user_last'] . "<br>";
+                    echo  "Vehicle ID: " . $row['vehicle_id'] . " Type: " . $row['vehicle_type'] . " NAME: " . $row['vehicle_name'] . " PRICE: $ " . $row['vehicle_price'] . "<br>";
                 }
             }
         ?>
-
-        <form action="Include/userhandler.php" method="POST">
-            <input type="text" name="delete" placeholder="delete user"><br>
-            <button type="submit" name="submit">Delete</button>
-        </form>
 
         <footer>
             <p>Welcome our Lord and Savior</p>

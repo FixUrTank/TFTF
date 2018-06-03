@@ -28,7 +28,7 @@
             }
                 
             //checks if admin account logging in
-            $sql = "SELECT * FROM users WHERE user_uid = "ADMIN" AND user_pwd = '$pwd'";
+            $sql = "SELECT * FROM users WHERE user_uid = 'ADMIN' AND user_pwd = '$pwd'";
             $result = mysqli_query($conn, $sql);
 
             if($row = mysqli_fetch_assoc($result)){

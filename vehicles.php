@@ -2,10 +2,10 @@
     session_start();
 
     if(!isset($_SESSION['ADMIN'])){
-        header("Location: ..homepage.php?thou_doest_not_have_permission_ye_peasant");
+        header("Location: ../homepage.php?thou_doest_not_have_permission_ye_peasant");
         exit();
     }
-    include_once 'dbh.php';
+    include_once 'Include/dbh.php';
 ?>
     
 <html>
@@ -30,12 +30,14 @@
         </nav>
         
         <?php
+            
             $sql = "SELECT * FROM vehicles";
             $result = mysqli_query($conn, $sql);
             
-            if(mysqli_num_rows($result) > 0){
+            echo "ALL OUR VEHICLES <br><br>";
+            if(mysqli_num_rows($result)){
                 while($row = mysqli_fetch_assoc($result)){
-                    echo "ALL OUR VEHICLES <br>" "Vehicle ID " . $row['vehicle_id'] . " Type: " . $row['vehicle_type'] " NAME: " . $row['vehicle_name'] . " PRICE: $ " . $row['vehicle_price']"<br>";
+                    echo  "Vehicle ID: " . $row['vehicle_id'] . " Type: " . $row['vehicle_type'] . " NAME: " . $row['vehicle_name'] . " PRICE: $ " . $row['vehicle_price'] . "<br>";
                 }
             }
         ?>

@@ -9,7 +9,6 @@ $port = 8889;
 
 //create connection
 $conn = mysqli_connect($host, $dbusername, $dbpassword, $dbname, $port);
-echo "connection succesful!";
 
 //error message if connection failed
 if (!$conn) {

@@ -2,7 +2,7 @@
 session_start();
 
 //Logging Out
-if (isset($_SESSION['USER'] || isset($_SESSION['ADMIN']))){
+if (isset($_SESSION['USER']) || isset($_SESSION['ADMIN'])){
     session_unset(); //removes all session variables
 
     session_destroy(); //destroys session and thus logs out user

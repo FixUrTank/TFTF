@@ -54,7 +54,7 @@
                 Easy to handle and steer. Automatic transmission. Reaches speeds of 60 km/h. Capacity for 2 people, possibility for carrying baggage<br>
                 Great for on-road as well. hola
                 </p> 
-                <form action="Include\atvhandler.php" method="GET"><button class="addcart" type="submit" name="atv1">Add to Cart</button></form>
+                <form action="Include/itemhandler.php" method="GET"><button class="addcart" type="submit" name="atv1">Add to Cart</button></form>
                 
             </div>
             
@@ -64,7 +64,7 @@
                 "Nagasaki Rogue"<br>
                 For those who want the extra power and speed this is for you. Comes with 20000hp, no joke...seriously the orange paint does a lot.
                 </p>
-                <form action="Include\atvhandler.php" method="GET"><button class="addcart" type="submit" name="atv2">Add to Cart</button></form>
+                <form action="Include/itemhandler.php" method="GET"><button class="addcart" type="submit" name="atv2">Add to Cart</button></form>
             </div>
 
             <div class="article">
@@ -74,7 +74,7 @@
                 Limited Time Offer!
                 A perfect buggy for group touring or just for your family.
                 </p>
-                <form action="Include\atvhandler.php" method="GET"><button class="addcart" type="submit" name="atv3">Add to Cart</button></form>
+                <form action="Include/itemhandler.php" method="GET"><button class="addcart" type="submit" name="atv3">Add to Cart</button></form>
             </div>           
     
     </body>
